@@ -1,0 +1,45 @@
+@import '../css/header.css';
+@import '../css/footer.css';
+
+.table-setting {
+    border: solid #bebebe 1px;
+    border-radius: 10px 10px 0 0;
+    overflow-y: auto;
+    margin: 2% 10% 2% 10%;
+}
+.table-box {
+    width: 180%;
+    background-color: white;
+}
+.table-box tr:first-child {
+    display: flex;
+    background-color: #036EB8;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.table-box tr {
+    display: flex;
+}
+.table-box td {
+    padding: .5% 0%;
+    width: 10%;
+    text-align: center;
+}
+.data-table td {
+    padding: .2% 0%;
+    margin: .5% 0;
+    border-right: 1px solid gray;
+    width: 10%;
+    color: gray;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.table-box td:last-child {
+    border-right: none;
+}
+
+.data-table a {
+    text-decoration: none;
+    color: gray;
+}

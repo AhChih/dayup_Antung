@@ -1,0 +1,60 @@
+body {
+    background-color: #f3f3f3;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header img {
+    width: 250px;
+}
+.header a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    padding: 0 15px;
+}
+h1 {
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.detailsData {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 0 0 0;
+}
+.detailsData span {
+    color: rgb(136, 136, 136);
+    letter-spacing: 3px;
+}
+.detailsData li {
+    margin: 25px 0;
+}
+.tableBox {
+    margin: 10% 0 0 0;
+    width: 100%;
+}
+.tableBox td {
+    width: 25%;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 2% 0;
+    border-top: 1px solid rgb(136, 136, 136);
+    border-bottom: 1px solid rgb(136, 136, 136);
+    color: rgb(136, 136, 136);
+}
+.watermark {
+    margin: 10% 0;
+    display: block;
+    margin-left: auto;
+    width: 240px;
+}

@@ -1,0 +1,162 @@
+@import '../css/header.css';
+@import '../css/footer.css';
+/* tab */
+.tab-header {
+  margin: 2% 0 0 0;
+  display: flex;
+}
+.active {
+  border-bottom: 40px solid #036eb8 !important;
+}
+.mask-1 {
+  cursor: pointer;
+  margin: 2% 0 0 10%;
+  width: 400px;
+  height: 0;
+  text-align: center;
+  border-radius: 5px 0px 0px 0px;
+  border-bottom: 40px solid rgb(255, 255, 255);
+  border-right: 35px solid transparent;
+}
+.mask-2 {
+  cursor: pointer;
+  margin: 2% 0 0 0%;
+  width: 400px;
+  height:0 ;
+  text-align: center;
+  border-radius: 5px 5px 0px 0;
+  border-bottom: 40px solid rgb(255, 255, 255);
+  border-right: 37px solid transparent;
+}
+.mask-1:hover {
+  opacity: .7;
+}
+.mask-2:hover {
+  opacity: .7;
+}
+.mask-1 a ,.mask-2 a {
+  padding: 3% 0 0 0;
+  letter-spacing: 2px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.tab-contents {
+  margin: 0% 10% 3% 10%;
+  border: 1px solid rgb(214, 214, 214);
+}
+.tab-list {
+  margin: 0 2.3%;
+  border-bottom: 1px solid black;
+}
+.tab-list:last-child {
+  border-bottom: none;
+}
+
+.case {
+  display: flex;
+  align-items: center;
+  padding: 2% 0%;
+}
+.case h3 {
+  color: gray;
+  letter-spacing: 5px;
+}
+.case li:first-child {
+  padding: 0 1% 0 1%;
+  border-right: 1px solid #bebebe;
+}
+.case li:first-child:hover{
+  opacity: 1;
+}
+.case li:hover {
+  opacity: .7;
+}
+.case li {
+  padding: 0 2%;
+}
+.case li a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 5% 15%;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 3px 2px 7px #cacaca;
+  -webkit-box-shadow: 3px 2px 7px #cacaca;
+  -moz-box-shadow: 3px 2px 7px #cacaca;
+}
+.progress {
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+}
+.progress span {
+  letter-spacing: 3px;
+  color: gray;
+}
+.progress h3 {
+  letter-spacing: 5px;
+  color: gray;
+  border-right: 1px solid #bebebe;
+  padding: 0 1% 0 1%;
+}
+.myProgress {
+  background: #bebebe;
+  width: 60%;
+  height: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0 2%;
+}
+.myBar {
+  background: #036eb8;
+  width: 80%;
+  height: 20px;
+  border-radius: 50px;
+  display: inline-block;
+}
+.carried {
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+}
+.carried li {
+  width: 18%;
+  border-right: 1px solid #bebebe;
+}
+.carried h3 {
+  letter-spacing: 5px;
+  color: gray;
+  padding: 0 1% 0 1%;
+  border-right: 1px solid #bebebe;
+}
+.carried span {
+  text-align: center;
+  margin: 0 0 0 0px;
+  display: block;
+  letter-spacing: 3px;
+  color: gray;
+}
+.date {
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+}
+.date li {
+  width: 18%;
+  border-right: 1px solid #bebebe;
+}
+.date h3 {
+  letter-spacing: 5px;
+  color: gray;
+  padding: 0 1% 0 1%;
+  border-right: 1px solid #bebebe;
+}
+.date span {
+  text-align: center;
+  margin: 0 0 0 0px;
+  display: block;
+  letter-spacing: 3px;
+  color: gray;
+}

@@ -1,0 +1,229 @@
+@import '/CSS/all.css';
+
+/* 數據資料 */
+.data-box {
+    display: flex;
+    margin: 3% 9% 1% 9%;
+}
+.data-box li {
+    width: 25%;
+    margin: 0 2%;
+    padding: 3%;
+    border-radius: 10px;
+}
+.data-box .li-1 {
+    background-color: #00497f;
+}
+.data-box .li-2 {
+    background-color: #036eb8;
+}
+.data-box .li-3 {
+    background-color: #2ea7e0;
+}
+.data-box .li-4 {
+    background-color: #ec6f76;
+}
+.data-box span {
+    font-family: 'Noto Sans', sans-serif;    
+    font-size: 48px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.data-box h3 {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10% 0 0 0;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/* chart */
+/* chart-left */
+#doughnut {
+    width: 50% !important;
+    height: 50% !important;
+}
+.chart-menu {
+    display: flex;
+}
+.chart-box {
+    background-color: white;
+    width: 40%;
+    margin: 1% 0% 2% 10%;
+    padding: 2% 0% 2% 2%;
+    border-radius: 2%;
+}
+.chart-box h3 {
+    letter-spacing: 2px;
+    color: gray;
+    margin: 20px 0 20px 0;
+}
+.chart-box-inner {
+    display: flex;
+}
+.chart-box-inner ul {
+    width: 15%;
+    margin: 15% 0% 0 15%;
+}
+.chart-box-inner li {
+    display: flex;
+    align-items: center;
+}
+.chart-box-inner li span {
+    letter-spacing: 3px;
+}
+.chart-box-inner .data-1::before {
+    content: "\2022"; 
+    color: #0060AF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+.chart-box-inner .data-2::before {
+    content: "\2022"; 
+    color: #EA575E;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+.chart-box-inner .data-3::before {
+    content: "\2022"; 
+    color: #F49C00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 30px;
+}
+.chart-box-inner .data-4::before {
+    content: "\2022"; 
+    color: #9FA0A0;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 30px;
+}
+
+/* chart-right */
+.chart-box-right {
+    background-color: white;
+    width: 40%;
+    margin: 1% 10% 2% 2%;
+    padding: 0 2% 2% 2%;
+    border-radius: 2%;
+}
+.chart-box-right h3 {
+    display: inline-block;
+    padding: 50px 0 30px 0;
+    letter-spacing: 2px;
+    color: gray;
+}
+.chart-box-right span {
+    letter-spacing: 2px;
+    color: gray;
+}
+.cb {
+    display: flex;
+    justify-content: space-between;
+}
+.chart-box-right ul {
+  display: flex;
+}
+.chart-box-right li {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 30px 30px 0 30px;
+}
+.chart-box-right .data-1::before {
+    content: "\2022"; 
+    color: #0060AF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+.chart-box-right .data-2::before {
+    content: "\2022"; 
+    color:#EA575E    ;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+.chart-box-right .data-3::before {
+    content: "\2022"; 
+    color:#F49C00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+
+/* chart-box footer */
+#footerLine {
+    width: 50% !important;
+    height: 50% !important;
+}
+.chart-box-footer {
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 10%;
+    padding: 2%;
+}
+.chart-box-footer h3 {
+    padding: 2%;
+    letter-spacing: 2px;
+    color: gray;
+}
+.ob {
+    display: flex;
+    justify-content: space-between;
+}
+.ob ul {
+    display: flex;
+}
+.ob li {
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+.ob li span {
+    letter-spacing: 2px;
+    color: gray;
+}
+.ob .data-1::before {
+    content: "\2022"; 
+    color: #84c24e;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+.ob .data-2::before {
+    content: "\2022"; 
+    color: #ec6f76;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}
+.ob .data-3::before {
+    content: "\2022"; 
+    color:#F49C00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    font-size: 30px;
+}

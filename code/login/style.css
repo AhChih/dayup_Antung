@@ -1,0 +1,69 @@
+
+.bg {
+    background-image:url('https://dayup2.website/wp-content/uploads/2021/05/background.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.box {
+    padding: 0 0 5% 15%;
+}
+
+.box h1 {
+    padding: 50px 0 0 0;
+    color: #013374;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.logo {
+    display: block;
+    width: 85px;
+    margin: 0 auto;
+}
+.account-list {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+
+}
+.password-list {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.account, .password {
+    margin: 0 15px 0 0;
+    width: 20px;
+}
+input[type="email"]
+{   
+    background-color: rgba(252, 252, 252, 0.7);
+    padding: 20px 15px; 
+    border: 1px #cccccc solid;
+    cursor: pointer;
+    border-radius: 5px; 
+    width: 350px;
+}
+::placeholder {
+    color: #a8a8a8;
+    padding-top: 35px;
+    font-size: 21px;
+    font-family: sans-serif;
+}
+.login-btn {
+    cursor: pointer;
+    background-color: #013374;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 0;
+    margin: 20px 0px 0 35px;
+    width: 382px;
+}
+.login-btn span {
+    font-size: 21px;
+    color: white;
+}
+
