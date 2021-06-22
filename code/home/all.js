@@ -3,7 +3,7 @@ var ctx = document.getElementById('doughnut').getContext("2d");
 var doughnut = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        // labels: ['Red', 'Blue', 'Yellow', 'Green'],
+        labels: ['華城', '士林', '大同', '其他'],
         datasets: [{
             data: [80, 20, 10, 2],
             backgroundColor: [
@@ -22,8 +22,17 @@ var doughnut = new Chart(ctx, {
         }]
     },
     options: {
+        legend: {
+            display: false,
+        },
         tooltips: {
-            enabled: false
+            backgroundColor: '#FFF',
+            titleFontSize: 15,
+            titleFontColor: '#0060AF',
+            titleMarginBottom: 30,
+            bodyFontColor: '#000',
+            bodyFontSize: 30,
+            bodySpacing: 15,       
         },
     }
 });
@@ -36,7 +45,8 @@ var right_chart = new Chart(ctx2, {
         labels: ['● 2017/01/01', '● 2018/01/01', '● 2019/01/01', '● 2020/01/01'],
         datasets: [
         {
-        data: [2, 8, 10, 5],
+        label: "特性",
+        data: [2, 20, 10, 5],
         backgroundColor: [
             '#0060AF',
             '#0060AF',
@@ -44,6 +54,7 @@ var right_chart = new Chart(ctx2, {
             '#0060AF',
             ],
         },{
+        label: "氣體",
         data: [12, 5, 8, 7],
         backgroundColor: [
             '#EA575E',
@@ -52,6 +63,7 @@ var right_chart = new Chart(ctx2, {
             '#EA575E', 
             ],
         },{
+        label: "糖醛",
         data: [4, 9, 7, 5],
         backgroundColor: [
             '#F49C00',
@@ -67,7 +79,13 @@ var right_chart = new Chart(ctx2, {
             display: false,
         },
         tooltips: {
-            enabled: false
+            backgroundColor: '#FFF',
+            titleFontSize: 15,
+            titleFontColor: '#0060AF',
+            titleMarginBottom: 30,
+            bodyFontColor: '#000',
+            bodyFontSize: 15,
+            bodySpacing: 15,       
         },
         scales: {
             yAxes: [
@@ -135,8 +153,8 @@ var footerLine = new Chart(ctx3, {
             titleFontColor: '#0060AF',
             titleMarginBottom: 30,
             bodyFontColor: '#000',
-            bodyFontSize: 30,
-            bodySpacing: 30,       
+            bodyFontSize: 20,
+            bodySpacing: 20,       
         },
         scales: {
             yAxes:[
@@ -156,8 +174,7 @@ var footerLine = new Chart(ctx3, {
                 ticks : {
                   fontSize: 28,
                   beginAtZero: true,
-                  max: 10,
-                  min: 0,
+
                 },
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",

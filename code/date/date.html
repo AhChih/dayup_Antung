@@ -4,41 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <title>歷年來檢驗數據</title>
 </head>
 <body>
   <div id="header"></div>
-    <!-- 上一頁按鈕 -->
-    <div class="goBack">
-      <i class="fas fa-caret-left"><a href="../schedule/index.html">回上一頁</a></i>
-    </div>
 
-    <!-- table -->
-    <div class="table-setting">
-      <table class="table-box" style="overflow-x:auto;" id="data_element"></table>
-    </div>
+    <div class="wrap">
+      <!-- 上一頁按鈕 -->
+      <div class="goBack">
+        <i class="fas fa-caret-left"><a href="../schedule/index.html">回上一頁</a></i>
+      </div>
+  
+      <!-- table -->
+      <div class="table-setting">
+        <table class="table-box" style="overflow-x:auto;" id="data_element"></table>
+      </div>
+  
+      <!-- 日期 -->
+      <div class="date-item">
+        <ul class="date-start">
+          <li class="toggle-calendar"><i class="fas fa-caret-down"></i><span>起始日期</span></li>
+          <li id="start-calendar" class="calendar"></li>
+        </ul>
+        <ul>
+          <li><span>2019/2/2</span></li>
+        </ul>
+        <ul class="date-end">
+          <li class="toggle-calendar"><i class="fas fa-caret-down"></i><span>終止日期</span></li>
+          <li id="end-calendar" class="calendar"></li>
+        </ul>
+        <ul>
+          <li><span>2019/2/2</span></li>
+        </ul>
+      </div>
 
-    <!--  圖表 1 -->
-    <div class="table-content">
-      <table id="chart_1"></table>
-      <div class="chart-box">
-        <h2>特性成長趨勢圖</h2>
-        <div class="chart-1">
-          <canvas id="myChart" width="600" height="200"></canvas>
+      <!--  圖表 1 -->
+      <div class="table-content">
+        <table id="chart_1"></table>
+        <div class="chart-box">
+          <h2>特性成長趨勢圖</h2>
+          <div class="chart-1">
+            <canvas id="myChart" width="600" height="200"></canvas>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 圖表 2 -->
-    <div class="table-content">
-      <table id="chart_2"></table>
-      <div class="chart-box">
-        <h2>氣體成長趨勢圖</h2>
-        <div class="chart-1">
-          <canvas id="myChart2" width="600" height="200"></canvas>
+      <!-- 中間日期 -->
+      <div class="date-item-middle">
+        <ul class="date-start-middle">
+          <li class="toggle-calendar"><i class="fas fa-caret-down"></i><span>起始日期</span></li>
+          <li id="start-calendar-middle" class="calendar"></li>
+        </ul>
+        <ul>
+          <li><span>2019/2/2</span></li>
+        </ul>
+        <ul class="date-end-middle">
+          <li class="toggle-calendar-middle"><i class="fas fa-caret-down"></i><span>終止日期</span></li>
+          <li id="end-calendar-middle" class="calendar-middle"></li>
+        </ul>
+        <ul>
+          <li><span>2019/2/2</span></li>
+        </ul>
+      </div>
+  
+      <!-- 圖表 2 -->
+      <div class="table-content">
+        <table id="chart_2"></table>
+        <div class="chart-box">
+          <h2>氣體成長趨勢圖</h2>
+          <div class="chart-1">
+            <canvas id="myChart2" width="600" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底下日期 -->
+      <div class="date-item-bottom">
+        <ul class="date-start-bottom">
+          <li class="toggle-calendar"><i class="fas fa-caret-down"></i><span>起始日期</span></li>
+          <li id="start-calendar-bottom" class="calendar"></li>
+        </ul>
+        <ul>
+          <li><span>2019/2/2</span></li>
+        </ul>
+        <ul class="date-end-bottom">
+          <li class="toggle-calendar-bottom"><i class="fas fa-caret-down"></i><span>終止日期</span></li>
+          <li id="end-calendar-bottom" class="calendar-bottom"></li>
+        </ul>
+        <ul>
+          <li><span>2019/2/2</span></li>
+        </ul>
+      </div>
+  
+      <!-- 圖表 3 -->
+      <div class="table-content">
+        <table id="chart_3"></table>
+        <div class="chart-box">
+          <h2>氣體成長趨勢圖</h2>
+          <div class="chart-1">
+            <canvas id="myChart3" width="600" height="200"></canvas>
+          </div>
         </div>
       </div>
     </div>

@@ -275,10 +275,93 @@ function chartRednder2() {
   chart_2.innerHTML = str;
 }
 
+function chartRednder3() {
+  let str = ''
+  str+= `<tr>
+  <td><span class="gray">油品特性/試驗編號</span></td>
+  <td><span>ATA2020100</span></td>
+  <td><span>ATA2020100</span></td>
+  <td><span>ATA2020100</span></td>
+  <td><span class="br-none">ATA2020100</span></td>
+</tr>
+<tr>
+  <td><span class="gray">取樣日期</span></td>
+  <td><span>2019/5/5</span></td>
+  <td><span>2019/6/5</span></td>
+  <td><span>2020/9/20</span></td>
+  <td><span class="br-none">2021/1/11</span></td>
+</tr>
+<tr>
+  <td><span class="gray">試驗日期</span></td>
+  <td><span>2019/5/5</span></td>
+  <td><span>2019/6/5</span></td>
+  <td><span>2020/9/20</span></td>
+  <td><span class="br-none">2021/1/11</span></td>
+</tr>
+<tr>
+  <td><span class="gray">取樣油溫</span></td>
+  <td><span>22°</span></td>
+  <td><span>22°C</span></td>
+  <td><span>22°C</span></td>
+  <td><span class="br-none">22°C</span></td>         
+</tr>
+<tr>
+  <td><span class="gray">2-糠醛(2-FAL)</span></td>
+  <td><span>25</span></td>
+  <td><span>26</span></td>
+  <td><span>27</span></td>
+  <td><span class="br-none">28</span></td>         
+</tr>
+<tr>
+  <td><span class="gray">2-糠醇(2-FOL)</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span class="br-none">ND</span></td> 
+</tr>
+<tr>
+  <td><span class="gray">5-氫氧甲基-2-糠醛（5HMF)</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span class="br-none">ND</span></td> 
+</tr>
+<tr>
+  <td><span class="gray">2-乙呋喃(2ACF)</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span class="br-none">ND</span></td> 
+</tr>
+<tr>
+  <td><span class="gray">5-甲基-2-糠醛(5MEF)</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span>ND</span></td>
+  <td><span class="br-none">ND</span></td> 
+</tr>
+<tr>
+  <td><span class="gray">油中糠醛總濃度</span></td>
+  <td><span>25</span></td>
+  <td><span>25</span></td>
+  <td><span>25</span></td>
+  <td><span class="br-none">25</span></td> 
+</tr>
+<tr class="last">
+  <td><span class="gray">試驗種類</span></td>
+  <td><span class="gray">例行試驗</span></td>
+  <td><span class="gray">例行試驗</span></td>
+  <td><span class="gray">例行試驗</span></td>
+  <td><span class="br-none gray">例行試驗</span></td>
+</tr>
+`
+chart_3.innerHTML = str;
+}
 
 dataRender();
 chartRednder1();
 chartRednder2();
+chartRednder3();
 
 // 圖表 1
 const ctx = document.getElementById('myChart');
@@ -345,10 +428,9 @@ const mylineGraph = new Chart(ctx, {
         legend: {
             position: 'right',
             labels: {
-                padding: 50,
+                padding: 20,
             }
         },
-        
         title: {
             display: false,
             text: "Gráfico de ventas - Ejemplo de Título"
@@ -360,6 +442,7 @@ const mylineGraph = new Chart(ctx, {
       }
     }
 });
+
 
 // 圖表 2
 const ctx2 = document.getElementById('myChart2');
@@ -425,6 +508,12 @@ const mylineGraph2 = new Chart(ctx2, {
       ]
     },
     options: {
+        legend: {
+          position: 'right',
+          labels: {
+            padding: 20,
+          }
+        },
         scales: {
             xAxes:[{
                 ticks: {
@@ -441,11 +530,103 @@ const mylineGraph2 = new Chart(ctx2, {
                 },
             }]
         },
+        title: {
+            display: false,
+            text: "Gráfico de ventas - Ejemplo de Título"
+        },
+        plugins: {
+            datalabels: {
+            display: false
+        }
+      }
+    }
+});
+
+// 圖表 3
+const ctx3 = document.getElementById('myChart3');
+const mylineGraph3 = new Chart(ctx3, {
+    type: "line",
+    data: {
+      labels: ["2019/7/25", "2019/9/26", "2019/11/25", "2020/1/31"],
+      datasets: [
+        {
+          label: "2-糠醛",
+          data: [21, 21, 13, 12],
+          fill: false,
+          borderColor: "#0cd19c",
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
+        },
+        {
+          label: "2-糠醇",
+          data: [12, 39, 22, 30],
+          fill: false,
+          borderColor: "#ff0000",
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
+        },
+        {
+          label: "5-氫氧甲基-2-糠醛",
+          data: [32, 40, 45, 33],
+          fill: false,
+          borderColor: "#ff7200",
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
+        },
+        {
+            label: "2-乙呋喃",
+            data: [22, 30, 25, 35],
+            fill: false,
+            borderColor: "#3f00ff",
+            lineTension: 0,
+            pointBorderWidth: 4,
+            pointStyle: "cross"
+        },
+        {
+          label: "5-甲基-2-糠醛",
+          data: [12, 40, 35, 23],
+          fill: false,
+          borderColor: "#7293b5",
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
+        },
+        {
+          label: "油中糠醛總濃度",
+          data: [42, 50, 35, 35],
+          fill: false,
+          borderColor: "#94bc60",
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
+        },
+      ]
+    },
+    options: {
         legend: {
-            position: 'right',
-            labels: {
-                padding: 50,
-            }
+          position: 'right',
+          labels: {
+            padding: 20,
+          }
+        },
+        scales: {
+            xAxes:[{
+                ticks: {
+                    fontSize: 20,
+                    padding	: 20,
+                },
+                gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
+                },
+            }],
+            yAxes:[{
+                ticks: {
+                    fontSize: 20,
+                },
+            }]
         },
         title: {
             display: false,
@@ -458,4 +639,87 @@ const mylineGraph2 = new Chart(ctx2, {
       }
     }
 });
-  
+
+// 日曆一
+new Calendar({
+  id: '#start-calendar',
+  calendarSize: 'small',
+  primaryColor: '#036eb8',
+  headerColor: '#036eb8',
+})
+
+new Calendar({
+  id: '#end-calendar',
+  calendarSize: 'small',
+  primaryColor: '#036eb8',
+  headerColor: '#036eb8',
+})
+
+$(function() {
+  $('.date-start').click(function(){
+    $('#start-calendar').toggle();
+  })
+
+  $('.date-end').click(function(){
+    $('#end-calendar').toggle();
+  })
+
+  $('#color-calendar').hide();
+  $('#end-calendar').hide()
+});
+
+// 日曆二
+new Calendar({
+  id: '#start-calendar-middle',
+  calendarSize: 'small',
+  primaryColor: '#036eb8',
+  headerColor: '#036eb8',
+})
+
+new Calendar({
+  id: '#end-calendar-middle',
+  calendarSize: 'small',
+  primaryColor: '#036eb8',
+  headerColor: '#036eb8',
+})
+
+$(function() {
+  $('.date-start-middle').click(function(){
+    $('#start-calendar-middle').toggle();
+  })
+
+  $('.date-end-middle').click(function(){
+    $('#end-calendar-middle').toggle();
+  })
+
+  $('#color-calendar-middle').hide();
+  $('#end-calendar-middle').hide()
+});
+
+// 日曆三
+new Calendar({
+  id: '#start-calendar-bottom',
+  calendarSize: 'small',
+  primaryColor: '#036eb8',
+  headerColor: '#036eb8',
+})
+
+new Calendar({
+  id: '#end-calendar-bottom',
+  calendarSize: 'small',
+  primaryColor: '#036eb8',
+  headerColor: '#036eb8',
+})
+
+$(function() {
+  $('.date-start-bottom').click(function(){
+    $('#start-calendar-bottom').toggle();
+  })
+
+  $('.date-end-bottom').click(function(){
+    $('#end-calendar-bottom').toggle();
+  })
+
+  $('#color-calendar-bottom').hide();
+  $('#end-calendar-bottom').hide()
+});
