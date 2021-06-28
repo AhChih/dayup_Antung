@@ -7,7 +7,7 @@ function render() {
 
     <!-- header -->
     <div class="header">
-      <img class="logo" src="../../image/2.HOME/logo.png">
+      <img class="logo" src="../../image/2.HOME/logo.svg">
       <ul>
           <li class="header-list">
               <img src="../../image/2.HOME/headshot_1.png">
@@ -22,32 +22,32 @@ function render() {
         <ul class="menu">
           <li>
             <a class="menu-list" href="#">
-             <img src="../../image/2.HOME/button icon_1-1.png">
-             <span style="margin-top: -5px;">廠區樣品進度管理</span>
+             <img src="../../image/2.Home/icon-1.svg">
+             <span>廠區樣品進度管理</span>
             </a>
           </li>
           <li>
            <a class="menu-list" href="#">
-             <img src="../../image/2.HOME/button icon_2-1.png">
+             <img src="../../image/2.HOME/icon-2.svg">
              <span>變壓器相關資料</span>
            </a>
            </li>
            <li>
              <a class="menu-list" href="#">
-               <img src="../../image/2.HOME/button icon_3-1.png">
+               <img src="../../image/2.HOME/icon-3.svg">
                <span>異常處理建議清單</span>
              </a>
            </li>
            <li>
              <a class="menu-list" href="#">
-               <img style="padding-top: 2px; width: 35px;" src="../../image/2.HOME/button icon_4-1.png">
-               <span style="margin-top: 6px;">雲端報告觀看</span>
+               <img src="../../image/2.HOME/icon-4.svg">
+               <span>雲端報告觀看</span>
              </a>
            </li>
            <li>
              <a href="#" class="menu-list">
-               <img style="margin-top: 3px;" src="../../image/2.HOME/button icon_5-1.png">
-               <span style="margin-top: 1px;">線上偵測器</span>
+               <img src="../../image/2.HOME/icon-5.svg">
+               <span>線上偵測器</span>
              </a>
            </li>
         </ul>

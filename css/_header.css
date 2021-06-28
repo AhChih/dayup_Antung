@@ -57,7 +57,7 @@ body {
 .menu-list {
   display: flex;
   text-decoration: none;
-  align-items: flex-end;
+  align-items: center;
   margin: 10% 0;
 }
 

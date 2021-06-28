@@ -1,1 +1,136 @@
 @import '../../css/all.css';
+
+.wrap {
+    margin: 0 10%;
+}
+
+/* 日期 */
+.calendar {
+    position: absolute;
+    top: 120%;
+    right: -100%;
+    width: 260px;
+  }
+  
+  .date-item {
+      margin: 70px 0 30px 0;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .date-item article {
+      text-decoration: none;
+      color:white ;
+  }
+  
+  .date-start, .date-end {
+      position: relative;
+      z-index: 2;
+  }
+  
+  .date-item ul:first-child, .date-item ul:nth-child(3) {
+      border: 1px solid rgb(185, 185, 185);
+      padding: 10px;
+      border-radius: 10px 0 0px 10px;
+      background-color: #036eb8;
+      color: white;
+  }
+  
+  .date-item ul:hover {
+      cursor: pointer;
+  }
+  
+  .date-item ul:nth-child(2), .date-item ul:nth-child(4) {
+      border: 1px solid rgb(185, 185, 185);
+      padding: 10px;
+      border-radius: 0 10px 10px 0px;
+  }
+  
+  .date-item ul:nth-child(2) {
+      margin-right: 15px;
+  }
+  
+  .date-item span {
+      letter-spacing: 1.5px;
+      padding: 0px 15px;
+  }
+
+/* 表格 + 表頭設定 */
+.table-setting {
+    border: solid #bebebe 1px;
+    border-radius: 10px 10px 0 0;
+    overflow-y: auto;
+    height: 500px;
+    margin: 2% 0% 2% 0%;
+}
+
+.table-box {
+    width: 120%;
+    background-color: white;
+}
+
+.table-header {
+    display: flex;
+    background-color: #036EB8;
+    color: white;
+    letter-spacing: 2px; 
+}
+
+.table-header td {
+    padding: .5% 0%;
+    width: 10%;
+    text-align: center;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+.table-box tr {
+    display: flex;
+}
+
+.table-box td:last-child {
+    border-right: none;
+}
+
+/* 表格寬度 */
+.data-table td {
+    padding: .2% 0%;
+    margin: .6% 0;
+    border-right: 1px solid #c8c8c8;
+    width: 10%;
+    color: gray;
+    letter-spacing: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody {
+    border-bottom: 1px solid #c8c8c8
+}
+
+.data-table .data-date {
+    width: 15% !important;
+    line-height: 1.5;
+}
+
+.data-table .data-state {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.data-state span {
+    color: rgb(243, 78, 78);
+}
+
+.data-table a {
+    text-decoration: none;
+    color: gray;
+}
