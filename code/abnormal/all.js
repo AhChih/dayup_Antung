@@ -14,15 +14,15 @@ new Calendar({
 })
   
 $(function() {
-  $('.date-start').click(function(){
+  $('.toggle-calendar-start').click(function(){
     $('#start-calendar').toggle();
   })
   
-  $('.date-end').click(function(){
+  $('.toggle-calendar-start-end').click(function(){
     $('#end-calendar').toggle();
   })
   
-  $('#color-calendar').hide();
+  $('#start-calendar').hide();
   $('#end-calendar').hide()
 });
 

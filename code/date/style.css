@@ -27,11 +27,15 @@
     color:white ;
 }
 
-.date-start, .date-end, .date-start-middle, .date-end-middle, .date-start-bottom, .date-end-bottom {
+.date-start, .date-end, 
+.date-start-middle, .date-end-middle, 
+.date-start-bottom, .date-end-bottom {
     position: relative;
 }
 
-.date-item ul:first-child, .date-item ul:nth-child(3), .date-item-middle ul:first-child, .date-item-middle ul:nth-child(3), .date-item-bottom ul:first-child, .date-item-bottom ul:nth-child(3) {
+.toggle-calendar-start, .toggle-calendar-start-end, 
+.toggle-calendar-middle, .toggle-calendar-middle-end, 
+.toggle-calendar-bottom, .toggle-calendar-bottom-end {
     border: 1px solid rgb(185, 185, 185);
     padding: 10px;
     border-radius: 10px 0 0px 10px;
@@ -43,13 +47,17 @@
     cursor: pointer;
 }
 
-.date-item ul:nth-child(2), .date-item ul:nth-child(4), .date-item-middle ul:nth-child(2), .date-item-middle ul:nth-child(4), .date-item-bottom ul:nth-child(2), .date-item-bottom ul:nth-child(4) {
+.date-item ul:nth-child(2), .date-item ul:nth-child(4), 
+.date-item-middle ul:nth-child(2), .date-item-middle ul:nth-child(4), 
+.date-item-bottom ul:nth-child(2), .date-item-bottom ul:nth-child(4) {
     border: 1px solid rgb(185, 185, 185);
     padding: 10px;
     border-radius: 0 10px 10px 0px;
 }
 
-.date-item ul:nth-child(2), .date-item-middle ul:nth-child(2), .date-item-bottom ul:nth-child(2) {
+.date-item ul:nth-child(2), 
+.date-item-middle ul:nth-child(2), 
+.date-item-bottom ul:nth-child(2) {
     margin-right: 15px;
 }
 

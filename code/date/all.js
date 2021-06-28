@@ -656,15 +656,15 @@ new Calendar({
 })
 
 $(function() {
-  $('.date-start').click(function(){
+  $('.toggle-calendar-start').click(function(){
     $('#start-calendar').toggle();
   })
 
-  $('.date-end').click(function(){
+  $('.toggle-calendar-start-end').click(function(){
     $('#end-calendar').toggle();
   })
 
-  $('#color-calendar').hide();
+  $('#start-calendar').hide();
   $('#end-calendar').hide()
 });
 
@@ -684,15 +684,15 @@ new Calendar({
 })
 
 $(function() {
-  $('.date-start-middle').click(function(){
+  $('.toggle-calendar-middle').click(function(){
     $('#start-calendar-middle').toggle();
   })
 
-  $('.date-end-middle').click(function(){
+  $('.toggle-calendar-middle-end').click(function(){
     $('#end-calendar-middle').toggle();
   })
 
-  $('#color-calendar-middle').hide();
+  $('#start-calendar-middle').hide();
   $('#end-calendar-middle').hide()
 });
 
@@ -712,14 +712,14 @@ new Calendar({
 })
 
 $(function() {
-  $('.date-start-bottom').click(function(){
+  $('.toggle-calendar-bottom').click(function(){
     $('#start-calendar-bottom').toggle();
   })
 
-  $('.date-end-bottom').click(function(){
+  $('.toggle-calendar-bottom-end').click(function(){
     $('#end-calendar-bottom').toggle();
   })
 
-  $('#color-calendar-bottom').hide();
+  $('#start-calendar-bottom').hide();
   $('#end-calendar-bottom').hide()
 });
