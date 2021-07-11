@@ -1,0 +1,18 @@
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .wrap {
+    background-color: white;
+  }

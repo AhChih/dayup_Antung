@@ -1,9 +1,5 @@
 @import '../../css/all.css';
 
-.wrap {
-    margin: 0 10%;
-}
-
 .p-0 {
     padding: 0;
 }
@@ -150,13 +146,12 @@
 }
 
 .table-content td {
-    width: 30%;
+    width: 14%;
     text-align: center;
 }
 
 .table-content span {
     display: block;
-    height: 20px;
     border-right: 1px solid gray;
     text-align: center;
     padding: 0 2%;
@@ -205,6 +200,6 @@
     width: 80%;
 }
 
-#chart_2 td {
-    width: 14%;
+@media (max-width:1600px) {
+    
 }

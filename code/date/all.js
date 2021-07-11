@@ -133,10 +133,10 @@ function chartRednder1() {
   </tr>
   <tr class="last">
     <td colspan="2"><span class="gray">試驗種類</span></td>
-    <td><span class="gray">例行試驗</span></td>
-    <td><span class="gray">例行試驗</span></td>
-    <td><span class="gray">例行試驗</span></td>
-    <td><span class="br-none gray">例行試驗</span></td>
+    <td><span class="gray">-</span></td>
+    <td><span class="gray">-</span></td>
+    <td><span class="gray">-</span></td>
+    <td><span class="br-none gray">-</span></td>
   </tr>
   `
   chart_1.innerHTML = str;
@@ -266,10 +266,10 @@ function chartRednder2() {
   </tr>
   <tr class="last">
     <td colspan="3"><span class="gray">試驗種類</span></td>
-    <td><span class="gray">例行試驗</span></td>
-    <td><span class="gray">例行試驗</span></td>
-    <td><span class="gray">例行試驗</span></td>
-    <td><span class="br-none gray">例行試驗</span></td>
+    <td><span class="gray"></span></td>
+    <td><span class="gray"></span></td>
+    <td><span class="gray"></span></td>
+    <td><span class="br-none gray"></span></td>
   </tr>
   `
   chart_2.innerHTML = str;
@@ -349,10 +349,10 @@ function chartRednder3() {
 </tr>
 <tr class="last">
   <td><span class="gray">試驗種類</span></td>
-  <td><span class="gray">例行試驗</span></td>
-  <td><span class="gray">例行試驗</span></td>
-  <td><span class="gray">例行試驗</span></td>
-  <td><span class="br-none gray">例行試驗</span></td>
+  <td><span class="gray"></span></td>
+  <td><span class="gray"></span></td>
+  <td><span class="gray"></span></td>
+  <td><span class="br-none gray"></span></td>
 </tr>
 `
 chart_3.innerHTML = str;
