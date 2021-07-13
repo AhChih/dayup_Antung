@@ -284,3 +284,35 @@
         padding: 2%;
     }
  }
+
+ @media (max-width: 768px) {
+    .container {
+        padding: 2%;
+    }
+    .data-box {
+        flex-wrap: wrap;
+    }
+    .data-box li {
+        width: 48%;
+        margin: 20px 0px;
+    }
+    .menu-box {
+        display: none;
+    }
+    .chart-menu {
+        flex-wrap: wrap;
+    }
+    .chart-box {
+        width: 100%;
+    }
+    .chart-box-inner li span {
+        font-size: 21px;
+    }
+    .chart-box-right {
+        width: 100%;
+    }
+    #footerLine {
+        width: 70% !important;
+        height: 70% !important;
+    }
+}

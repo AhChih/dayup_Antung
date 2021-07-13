@@ -12,9 +12,26 @@ function render() {
             <img class="logo" src="../../image/2.HOME/logo.svg">
           </a>
           <ul>
+            <!-- 768px 以下隱藏 -->
             <li class="header-list">
               <img src="../../image/2.HOME/headshot_1.png">
               <span>Hi, BEN JOMNSON</span>
+            </li>
+            <!-- 768px 以下顯示 -->
+            <li class="hamburger-list">
+            <div class="hamburger-menu">
+               <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Главная</a></li>
+			            <li><a class="menu__item" href="#">Проекты</a></li>
+			            <li><a class="menu__item" href="#">Команда</a></li>
+			            <li><a class="menu__item" href="#">Блог</a></li>
+			            <li><a class="menu__item" href="#">Контакты</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>

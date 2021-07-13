@@ -153,7 +153,7 @@ var footerLine = new Chart(ctx3, {
             titleFontColor: '#0060AF',
             titleMarginBottom: 30,
             bodyFontColor: '#000',
-            bodyFontSize: 20,
+            bodyFontSize: 28,
             bodySpacing: 20,       
         },
         scales: {
@@ -162,8 +162,7 @@ var footerLine = new Chart(ctx3, {
                 ticks : {
                   fontSize: 28,
                 },
-                barPercentage: 50,
-                barThickness: 40,
+
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
                 }
@@ -181,6 +180,6 @@ var footerLine = new Chart(ctx3, {
                 }
               }
             ]
-          },
-   }
+        },
+    }
 });
