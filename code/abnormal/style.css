@@ -1,9 +1,5 @@
 @import '../../css/all.css';
 
-.wrap {
-    margin: 0 10%;
-}
-
 /* 日期 */
 .calendar {
     position: absolute;
