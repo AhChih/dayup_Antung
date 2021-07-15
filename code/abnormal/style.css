@@ -57,11 +57,11 @@
     border-radius: 10px 10px 0 0;
     overflow-y: auto;
     height: 500px;
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0%;
 }
 
 .table-box {
-    width: 120%;
+    width: 135%;
     background-color: white;
 }
 
@@ -74,8 +74,12 @@
 
 .table-header td {
     padding: .5% 0%;
-    width: 10%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    width: 14.5%;
 }
 
 thead {
@@ -93,13 +97,11 @@ thead {
 
 /* 表格寬度 */
 .data-table td {
-    padding: .2% 0%;
     margin: .6% 0;
     border-right: 1px solid #c8c8c8;
-    width: 10%;
+    width: 15%;
     color: gray;
     letter-spacing: 2px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
