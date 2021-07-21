@@ -5,7 +5,7 @@ function render() {
   let item = "";
   str += `
     <!-- header -->
-    <div class="wrap">
+    <div class="bg-white">
       <div class="header">
         <div class="container header-inner">
           <a href="../home/index.html">
@@ -25,11 +25,36 @@ function render() {
                   <span></span>
                 </label>
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Главная</a></li>
-			            <li><a class="menu__item" href="#">Проекты</a></li>
-			            <li><a class="menu__item" href="#">Команда</a></li>
-			            <li><a class="menu__item" href="#">Блог</a></li>
-			            <li><a class="menu__item" href="#">Контакты</a></li>
+                  <li>
+                    <a class="menu__item" href="../schedule/schedule.html">
+                      <img src="../../image/2.Home/icon-1.svg">
+                      <span>廠區樣品進度管理</span>
+                    </a>
+                  </li>
+			            <li>
+                    <a class="menu__item" href="../transformer/transformer.html">
+                      <img src="../../image/2.HOME/icon-2.svg">
+                      <span>變壓器相關資料</span>
+                    </a>
+                  </li>
+			            <li>
+                    <a class="menu__item" href="../abnormal/abnormal.html">
+                      <img src="../../image/2.HOME/icon-3.svg">
+                      <span>異常處理建議清單</span>
+                    </a>
+                  </li>
+			            <li>
+                    <a class="menu__item" href="../cloud/cloud.html">
+                      <img src="../../image/2.HOME/icon-4.svg">
+                      <span>雲端報告觀看</span>
+                    </a>
+                  </li>
+			            <li>
+                    <a class="menu__item" href="#">
+                      <img src="../../image/2.HOME/icon-5.svg">
+                      <span>線上偵測器</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -101,9 +126,8 @@ function render() {
            </ul>
         </ul>
       </div>`;
-  item += `<div class="footer">
-  <h3>版權所有 2020 台灣安東集團-安保科技股份有限公司 客戶服務中心（TEL）：（03）328-3200</h3>
-  </div>`;
+      
+  item += `<h3>版權所有 2020 台灣安東集團-安保科技股份有限公司 <br> 客戶服務中心（TEL）：（03）328-3200</h3>`;
 
   header.innerHTML = str;
   footer.innerHTML = item;

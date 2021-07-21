@@ -78,11 +78,12 @@
 
 .chart-box-inner {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .chart-box-inner ul {
     width: 15%;
-    margin: 15% 0% 0 15%;
 }
 
 .chart-box-inner li {
@@ -91,6 +92,7 @@
 }
 
 .chart-box-inner li span {
+    font-size: 18px;
     letter-spacing: 3px;
 }
 
@@ -152,6 +154,7 @@
 .chart-box-right span {
     letter-spacing: 2px;
     color: gray;
+    font-size: 18px;
 }
 
 .cb {
@@ -216,6 +219,7 @@
     padding: 2%;
     letter-spacing: 2px;
     color: gray;
+    font-size: 18px;
 }
 
 .ob {
@@ -236,6 +240,7 @@
 .ob li span {
     letter-spacing: 2px;
     color: gray;
+    font-size: 18px;
 }
 
 .ob .data-1::before {
@@ -271,7 +276,6 @@
 @media (max-width: 1600px) {
     .chart-box-inner ul {
         width: 25%;
-        margin: 10% 0 0 10%;
     }
  }
 
@@ -286,9 +290,6 @@
  }
 
  @media (max-width: 768px) {
-    .container {
-        padding: 2%;
-    }
     .data-box {
         flex-wrap: wrap;
     }
@@ -296,8 +297,8 @@
         width: 48%;
         margin: 20px 0px;
     }
-    .menu-box {
-        display: none;
+    .chart-box-inner ul {
+        width: 25%;
     }
     .chart-menu {
         flex-wrap: wrap;
@@ -305,11 +306,23 @@
     .chart-box {
         width: 100%;
     }
+    .chart-box-inner {
+        justify-content: space-around;
+    }
     .chart-box-inner li span {
         font-size: 21px;
     }
     .chart-box-right {
         width: 100%;
+    }
+    .chart-box-right {
+        margin-bottom: 3%;
+    }
+    .chart-box-right span {
+        font-size: 21px;
+    }
+    .ob li span {
+        font-size: 21px;
     }
     #footerLine {
         width: 70% !important;

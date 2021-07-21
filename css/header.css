@@ -211,10 +211,10 @@
   position: fixed;
   top: 30px;
   right: 20px;
-  width: 26px;
+  width: 36px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 99;
 }
 
 .menu__btn > span,
@@ -249,20 +249,25 @@
   list-style: none;
   background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-
   transition-duration: .25s;
 }
 
 .menu__item {
-  display: block;
-  padding: 12px 24px;
+  display: flex;
+  padding: 30px 24px;
   color: #333;
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
+  align-items: center;
 }
+
+.menu__item img {
+  width: 30px;
+  margin-right: 15px;
+}
+
 .menu__item:hover {
   background-color: #CFD8DC;
 }
@@ -289,9 +294,15 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 2%;
+}
   .header-list {
     display: none;
   }
+  .menu-box {
+    display: none;
+}
   .hamburger-list {
     display: block;
   }

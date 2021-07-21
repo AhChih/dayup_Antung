@@ -6,6 +6,7 @@ body {
     background-color: #f3f3f3;
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.5;
+    height: 100%;
   }
   
   .container {
@@ -13,6 +14,25 @@ body {
     margin: 0 auto;
   }
 
-  .wrap {
+  .bg-white {
     background-color: white;
+  }
+
+  .p-0 {
+    padding: 0 !important;
+  }
+
+  .m-2percentage {
+    margin: 2% !important;
+  }
+
+  .wrap {
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  }
+
+  .border-none {
+    border: none !important;
   }

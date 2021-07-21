@@ -53,3 +53,13 @@ thead {
     text-decoration: none;
     color: gray;
 }
+
+@media (max-width: 768px) {
+    thead {
+        position: static;
+    }
+    .table-box {
+        width: 320%;
+    }
+}
+  

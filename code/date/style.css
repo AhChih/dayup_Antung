@@ -200,6 +200,20 @@
     width: 80%;
 }
 
-@media (max-width:1600px) {
-    
+@media (max-width: 768px) {
+    .table-box {
+        width: 320%;
+    }
+    .table-content span {
+        font-size: 14px;
+    }
+    .table-content .rowspan span {
+        left: 0;
+    }
+    .chart-box h2 {
+        display: none;
+    }
+    .chart-1 {
+        width: 700px !important;
+    }
 }

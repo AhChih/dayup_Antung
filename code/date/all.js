@@ -723,3 +723,15 @@ $(function() {
   $('#start-calendar-bottom').hide();
   $('#end-calendar-bottom').hide()
 });
+
+  // sidebar toggle 解決日期顯示在上面問題
+  let change = true;
+  $('.menu__btn').click(function(){
+      if (change == false) {
+        change = true;
+        $('.date-start, .date-start-middle, .date-start-bottom').css('z-index', '1')
+        return
+      }
+      $('.date-start, .date-start-middle, .date-start-bottom').css('z-index', '-1')
+      change = false;
+  })
