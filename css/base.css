@@ -26,13 +26,16 @@ body {
     margin: 2% !important;
   }
 
-  .wrap {
-    /* min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-  }
-
   .border-none {
     border: none !important;
+  }
+
+  .ipad-none {
+    display: none !important;
+  }
+
+  @media (max-width: 414px) {
+    .ipad-none {
+      display: inline-block !important;
+    }  
   }

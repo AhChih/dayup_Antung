@@ -149,18 +149,18 @@ var footerLine = new Chart(ctx3, {
         },
         tooltips: {
             backgroundColor: '#FFF',
-            titleFontSize: 30,
+            titleFontSize: 16,
             titleFontColor: '#0060AF',
             titleMarginBottom: 30,
             bodyFontColor: '#000',
-            bodyFontSize: 28,
-            bodySpacing: 20,       
+            bodyFontSize: 16,
+            bodySpacing: 10,       
         },
         scales: {
             yAxes:[
                 {
                 ticks : {
-                  fontSize: 28,
+                  fontSize: 16,
                 },
 
                 gridLines: {
@@ -171,7 +171,7 @@ var footerLine = new Chart(ctx3, {
               {
                 display: false,
                 ticks : {
-                  fontSize: 28,
+                  fontSize: 16,
                   beginAtZero: true,
 
                 },

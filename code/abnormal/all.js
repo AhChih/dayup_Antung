@@ -139,3 +139,16 @@ const data = [
       table_element.innerHTML = titleStr + dataStr
   }
   tableRender();
+
+    // sidebar toggle 解決日期顯示在上面問題
+    let change = true;
+    $('.menu__btn').click(function(){
+        if (change == false) {
+          change = true;
+          $('.date-start').css('z-index', '1')
+          return
+        }
+        $('.date-start').css('z-index', '-1')
+        
+        change = false;
+    })

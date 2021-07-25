@@ -1,10 +1,13 @@
-.footer {
-
-}
-
 .footer h3 {
     margin: 2% 0;
     text-align: center;
     letter-spacing: 5px;
     color: gray;
+}
+
+@media (max-width: 414px) {
+    .footer h3 {
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
 }

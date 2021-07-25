@@ -93,3 +93,5 @@ new Calendar({
       $('.date-start').css('z-index', '-1')
       change = false;
   })
+
+  // alert($(window).width());

@@ -25,6 +25,9 @@ function render() {
                   <span></span>
                 </label>
                 <ul class="menu__box">
+                  <li class="headshot">
+                    <img src="../../image/2.HOME/headshot_1.png">
+                  </li>
                   <li>
                     <a class="menu__item" href="../schedule/schedule.html">
                       <img src="../../image/2.Home/icon-1.svg">
@@ -55,6 +58,9 @@ function render() {
                       <span>線上偵測器</span>
                     </a>
                   </li>
+                  <li>
+                  <a class="logout ipad-none" href="#">Sign out</a>
+                </li>
                 </ul>
               </div>
             </li>

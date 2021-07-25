@@ -62,4 +62,17 @@ thead {
         width: 320%;
     }
 }
-  
+
+@media (max-width: 414px) {
+    .table-header td {
+        font-size: 12px;
+    }
+    .data-table td {
+        padding: .2%;
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    .table-setting {
+        height: auto;
+    }
+}
