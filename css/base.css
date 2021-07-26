@@ -34,8 +34,12 @@ body {
     display: none !important;
   }
 
+
   @media (max-width: 414px) {
     .ipad-none {
       display: inline-block !important;
+    }
+    .iphone-none {
+      display: none !important;
     }  
   }

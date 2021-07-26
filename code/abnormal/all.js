@@ -15,10 +15,18 @@ new Calendar({
   
 $(function() {
   $('.toggle-calendar-start').click(function(){
+    let calendarValue = $('#start-calendar').attr('style');
+    $('#end-calendar').hide()
     $('#start-calendar').toggle();
+    if (calendarValue == 'display: none;') {
+      $('.date-end').css('z-index', '-1')
+    } else {
+      $('.date-end').css('z-index', '2')
+    }
   })
   
   $('.toggle-calendar-start-end').click(function(){
+    $('#start-calendar').hide();
     $('#end-calendar').toggle();
   })
   
@@ -146,9 +154,13 @@ const data = [
         if (change == false) {
           change = true;
           $('.date-start').css('z-index', '1')
+          $('.date-end').css('z-index', '1')
           return
         }
         $('.date-start').css('z-index', '-1')
-        
+        $('.date-end').css('z-index', '-1')
+        $('#start-calendar').hide();
+        $('#end-calendar').hide()
+
         change = false;
     })

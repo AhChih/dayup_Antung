@@ -162,3 +162,31 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 414px) {
+  .mask-1 a, .mask-2 a {
+    letter-spacing: 0px;
+    font-size: 12px;
+    padding: 3% 0 0 2%;
+  }
+  .case {
+    flex-wrap: wrap;
+  }
+  .case li a {
+    margin: 0;
+  }
+  .case h3, .carried h3, .progress h3 {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  .carried span {
+    letter-spacing: 0;
+    font-size: 12px;
+  }
+  select {
+    margin-left: 2%;
+  }
+  .myProgress {
+    width: 75%;
+  }
+}

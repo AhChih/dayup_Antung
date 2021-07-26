@@ -30,7 +30,7 @@ const data = [
         titleStr += `
         <thead>
             <tr class="table-header";>
-                <td>順序</td>
+                <td style="width: 5%">順序</td>
                 <td>油品特性報告編號</td>
                 <td>油中氣體報告編號</td>
                 <td>油品糠醛報告編號</td>
@@ -42,7 +42,7 @@ const data = [
         index += 1
         dataStr +=`
         <tr class="data-table">
-            <td>${index}</td>
+            <td style="width: 5%">${index}</td>
             <td><a href="#">${res.transformerName}</a></td>
             <td><a href="#">${res.transformerNumber}</a></td>
             <td><a href="#">${res.transformerState}</a></td>
@@ -71,27 +71,40 @@ new Calendar({
   
   $(function() {
     $('.toggle-calendar-start').click(function(){
+      let calendarValue = $('#start-calendar').attr('style');
+      $('#end-calendar').hide()
       $('#start-calendar').toggle();
+      if (calendarValue == 'display: none;') {
+        $('.date-end').css('z-index', '-1')
+      } else {
+        $('.date-end').css('z-index', '2')
+      }
     })
-  
+    
     $('.toggle-calendar-start-end').click(function(){
+      $('#start-calendar').hide();
       $('#end-calendar').toggle();
     })
-  
+    
     $('#start-calendar').hide();
     $('#end-calendar').hide()
   });
 
-  // sidebar toggle 解決日期顯示在上面問題
-  let change = true;
-  $('.menu__btn').click(function(){
-      if (change == false) {
-        change = true;
-        $('.date-start').css('z-index', '1')
-        return
-      }
-      $('.date-start').css('z-index', '-1')
-      change = false;
-  })
+    // sidebar toggle 解決日期顯示在上面問題
+    let change = true;
+    $('.menu__btn').click(function(){
+        if (change == false) {
+          change = true;
+          $('.date-start').css('z-index', '1')
+          $('.date-end').css('z-index', '1')
+          return
+        }
+        $('.date-start').css('z-index', '-1')
+        $('.date-end').css('z-index', '-1')
+        $('#start-calendar').hide();
+        $('#end-calendar').hide()
+
+        change = false;
+    })
 
   // alert($(window).width());
