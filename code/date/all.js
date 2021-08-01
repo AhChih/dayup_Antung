@@ -641,98 +641,27 @@ const mylineGraph3 = new Chart(ctx3, {
     }
 });
 
-// 日曆一
-new Calendar({
-  id: '#start-calendar',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-
-new Calendar({
-  id: '#end-calendar',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-
-$(function() {
-  $('.toggle-calendar-start').click(function(){
-    $('#start-calendar').toggle();
-  })
-
-  $('.toggle-calendar-start-end').click(function(){
-    $('#end-calendar').toggle();
-  })
-
-  $('#start-calendar').hide();
-  $('#end-calendar').hide()
+// datepicker
+$("#startDate-top").flatpickr({
+  dateFormat: "Y-m-d"
 });
 
-// 日曆二
-new Calendar({
-  id: '#start-calendar-middle',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-
-new Calendar({
-  id: '#end-calendar-middle',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-
-$(function() {
-  $('.toggle-calendar-middle').click(function(){
-    $('#start-calendar-middle').toggle();
-  })
-
-  $('.toggle-calendar-middle-end').click(function(){
-    $('#end-calendar-middle').toggle();
-  })
-
-  $('#start-calendar-middle').hide();
-  $('#end-calendar-middle').hide()
+$("#endDate-top").flatpickr({
+  dateFormat: "Y-m-d"
 });
 
-// 日曆三
-new Calendar({
-  id: '#start-calendar-bottom',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-
-new Calendar({
-  id: '#end-calendar-bottom',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-
-$(function() {
-  $('.toggle-calendar-bottom').click(function(){
-    $('#start-calendar-bottom').toggle();
-  })
-
-  $('.toggle-calendar-bottom-end').click(function(){
-    $('#end-calendar-bottom').toggle();
-  })
-
-  $('#start-calendar-bottom').hide();
-  $('#end-calendar-bottom').hide()
+$("#startDate-middle").flatpickr({
+  dateFormat: "Y-m-d"
 });
 
-  // sidebar toggle 解決日期顯示在上面問題
-  let change = true;
-  $('.menu__btn').click(function(){
-      if (change == false) {
-        change = true;
-        $('.date-start, .date-start-middle, .date-start-bottom').css('z-index', '1')
-        return
-      }
-      $('.date-start, .date-start-middle, .date-start-bottom').css('z-index', '-1')
-      change = false;
-  })
+$("#endDate-middle").flatpickr({
+  dateFormat: "Y-m-d"
+});
+
+$("#startDate-bottom").flatpickr({
+  dateFormat: "Y-m-d"
+});
+
+$("#endDate-bottom").flatpickr({
+  dateFormat: "Y-m-d"
+});

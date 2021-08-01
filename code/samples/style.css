@@ -80,7 +80,7 @@ h1 {
 
 @media (max-width: 450px) {
     .header img, .watermark {
-        width: 150px;
+        width: 70px;
     }
     h1 {
         font-size: 24px;

@@ -294,7 +294,6 @@
 }
 
 @media (max-width: 992px) {
-
   .header-list {
     display: none;
   }
@@ -303,6 +302,12 @@
 }
   .hamburger-list {
     display: block;
+  }
+  .content-list a  {
+    display: none;
+  }
+  .logout  {
+    margin: 50px 0 0 15px
   }
 }
 
@@ -348,8 +353,5 @@
   }
   .menu__item span {
     font-size: 16px;
-  }
-  .logout  {
-    margin: 50px 0 0 15px
   }
 }

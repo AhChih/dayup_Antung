@@ -264,3 +264,7 @@ function tableRender() {
     table_element.innerHTML = titleStr + dataStr
 }
 tableRender();
+
+$('#menu__toggle').click(function(){
+    $('thead').toggleClass('change-sticky')
+})
