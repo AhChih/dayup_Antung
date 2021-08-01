@@ -1,39 +1,3 @@
-// 日曆
-new Calendar({
-    id: '#start-calendar',
-    calendarSize: 'small',
-    primaryColor: '#036eb8',
-    headerColor: '#036eb8',
-  })
-  
-new Calendar({
-  id: '#end-calendar',
-  calendarSize: 'small',
-  primaryColor: '#036eb8',
-  headerColor: '#036eb8',
-})
-  
-$(function() {
-  $('.toggle-calendar-start').click(function(){
-    let calendarValue = $('#start-calendar').attr('style');
-    $('#end-calendar').hide()
-    $('#start-calendar').toggle();
-    if (calendarValue == 'display: none;') {
-      $('.date-end').css('z-index', '-1')
-    } else {
-      $('.date-end').css('z-index', '2')
-    }
-  })
-  
-  $('.toggle-calendar-start-end').click(function(){
-    $('#start-calendar').hide();
-    $('#end-calendar').toggle();
-  })
-  
-  $('#start-calendar').hide();
-  $('#end-calendar').hide()
-});
-
 const data = [
   {
     area: '生一部',
@@ -148,19 +112,11 @@ const data = [
   }
   tableRender();
 
-    // sidebar toggle 解決日期顯示在上面問題
-    let change = true;
-    $('.menu__btn').click(function(){
-        if (change == false) {
-          change = true;
-          $('.date-start').css('z-index', '1')
-          $('.date-end').css('z-index', '1')
-          return
-        }
-        $('.date-start').css('z-index', '-1')
-        $('.date-end').css('z-index', '-1')
-        $('#start-calendar').hide();
-        $('#end-calendar').hide()
+// datepicker
+$("#startDate").flatpickr({
+  dateFormat: "Y-m-d"
+});
 
-        change = false;
-    })
+$("#endDate").flatpickr({
+  dateFormat: "Y-m-d"
+});

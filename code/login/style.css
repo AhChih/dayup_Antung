@@ -53,6 +53,15 @@ input[type="email"] {
     width: 350px;
 }
 
+input[type="text"] {   
+    background-color: rgba(252, 252, 252, 0.7);
+    padding: 20px 15px; 
+    border: 1px #cccccc solid;
+    cursor: pointer;
+    border-radius: 5px; 
+    width: 350px;
+}
+
 ::placeholder {
     color: #a8a8a8;
     padding-top: 35px;
@@ -75,3 +84,27 @@ input[type="email"] {
     color: white;
 }
 
+@media (max-width: 992px) {
+    .bg {
+        justify-content: center;
+    }
+    .box {
+        padding: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .box {
+        width: 100%;
+    }
+    .account, .password {
+        display: none;
+    }
+    .login-btn {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    input[type="email"], input[type="text"] {
+        width: 100%;
+    }
+}

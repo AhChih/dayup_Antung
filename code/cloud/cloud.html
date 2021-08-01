@@ -5,16 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
     <title>雲端報告畫面</title>
   </head>
   <body>
@@ -23,27 +16,17 @@
         <!-- header -->
         <div id="header"></div>
         <div class="container">
-          <!-- 日期 -->
-          <div class="date-item">
-            <ul class="date-start">
-              <li class="toggle-calendar-start">
-                <i class="fas fa-caret-down"></i><span>起始日期</span>
-              </li>
-              <li id="start-calendar" class="calendar"></li>
-            </ul>
-            <ul class="date-start-calendar">
-              <li><span>2019/2/2</span></li>
-            </ul>
-            <ul class="date-end">
-              <li class="toggle-calendar-start-end">
-                <i class="fas fa-caret-down"></i><span>終止日期</span>
-              </li>
-              <li id="end-calendar" class="calendar"></li>
-            </ul>
-            <ul>
-              <li><span>2019/2/2</span></li>
-            </ul>
-          </div>
+          <!-- datepicker -->
+          <ul class="date">
+            <li>
+              <span>起始日期</span>
+              <input type="text" id="startDate" placeholder="" data-input>
+            </li>
+            <li>
+              <span>結束日期</span>
+              <input type="text" id="endDate" placeholder="" data-input>
+            </li>
+          </ul>
           <!-- table -->
           <div class="table-setting">
             <table class="table-box" id="table_element"></table>
@@ -52,6 +35,7 @@
       </div>
       <div id="footer" class="footer"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
     <script src="../../js/render.js"></script>
     <script src="./all.js"></script>
   </body>

@@ -11,7 +11,6 @@
 .mask-1 {
   cursor: pointer;
   margin: 2% 0 0 0;
-  width: 400px;
   height: 0;
   text-align: center;
   border-radius: 5px 0px 0px 0px;
@@ -21,7 +20,6 @@
 .mask-2 {
   cursor: pointer;
   margin: 2% 0 0 0%;
-  width: 400px;
   height:0 ;
   text-align: center;
   border-radius: 5px 5px 0px 0;
@@ -35,9 +33,9 @@
   opacity: .7;
 }
 .mask-1 a ,.mask-2 a {
-  padding: 3% 0 0 0;
   letter-spacing: 2px;
   display: block;
+  font-size: 14px;
   text-decoration: none;
   color: black;
 }
@@ -55,10 +53,11 @@
 }
 .case h3 {
   color: gray;
-  letter-spacing: 5px;
 }
 .case li:first-child {
-  padding: 0 1% 0 1%;
+  width: 10%;
+  padding: 0;
+  text-align: center;
   border-right: 1px solid #bebebe;
 }
 .case li:first-child:hover{
@@ -87,15 +86,14 @@
   align-items: center;
 }
 .progress span {
-  letter-spacing: 3px;
   color: gray;
 }
 .progress h3 {
-  letter-spacing: 5px;
+  text-align: center;
+  width: 10%;
   color: gray;
   margin-right: 2%;
   border-right: 1px solid #bebebe;
-  padding: 0 1% 0 1%;
 }
 .myProgress {
   background: #bebebe;
@@ -125,21 +123,20 @@
   border-right: none;
 }
 .carried h3 {
-  letter-spacing: 5px;
+  text-align: center;
+  width: 10%;
   color: gray;
-  padding: 0 1% 0 1%;
   border-right: 1px solid #bebebe;
 }
 .carried span {
   text-align: center;
-  margin: 0 0 0 0px;
   display: block;
   letter-spacing: 3px;
   color: gray;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .tab-contents {
       margin: 0px
   }
@@ -148,9 +145,6 @@
   }
   .case li a {
     margin-right: 30px;
-  }
-  .progress h3 {
-    width: auto;
   }
   .myProgress {
     width: 80%;

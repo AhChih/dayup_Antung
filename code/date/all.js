@@ -479,13 +479,13 @@ const mylineGraph2 = new Chart(ctx2, {
           pointStyle: "cross"
         },
         {
-            label: "乙烷",
-            data: [22, 30, 25, 35],
-            fill: false,
-            borderColor: "#3f00ff",
-            lineTension: 0,
-            pointBorderWidth: 4,
-            pointStyle: "cross"
+          label: "乙烷",
+          data: [22, 30, 25, 35],
+          fill: false,
+          borderColor: "#3f00ff",
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
         },
         {
           label: "乙炔",
@@ -551,7 +551,7 @@ const mylineGraph3 = new Chart(ctx3, {
       datasets: [
         {
           label: "2-糠醛",
-          data: [21, 21, 13, 12],
+          data: [0, 0, 0, 0],
           fill: false,
           borderColor: "#0cd19c",
           lineTension: 0,
@@ -560,7 +560,7 @@ const mylineGraph3 = new Chart(ctx3, {
         },
         {
           label: "2-糠醇",
-          data: [12, 39, 22, 30],
+          data: [0, 0, 0, 0],
           fill: false,
           borderColor: "#ff0000",
           lineTension: 0,
@@ -569,7 +569,7 @@ const mylineGraph3 = new Chart(ctx3, {
         },
         {
           label: "5-氫氧甲基-2-糠醛",
-          data: [32, 40, 45, 33],
+          data: [0, 0, 0, 0],
           fill: false,
           borderColor: "#ff7200",
           lineTension: 0,
@@ -577,17 +577,17 @@ const mylineGraph3 = new Chart(ctx3, {
           pointStyle: "cross"
         },
         {
-            label: "2-乙呋喃",
-            data: [22, 30, 25, 35],
-            fill: false,
-            borderColor: "#3f00ff",
-            lineTension: 0,
-            pointBorderWidth: 4,
-            pointStyle: "cross"
+          label: "2-乙呋喃",
+          data: [0, 0, 0, 0],
+          borderColor: "#3f00ff",
+          fill: false,
+          lineTension: 0,
+          pointBorderWidth: 4,
+          pointStyle: "cross"
         },
         {
           label: "5-甲基-2-糠醛",
-          data: [12, 40, 35, 23],
+          data: [0, 0, 0, 0],
           fill: false,
           borderColor: "#7293b5",
           lineTension: 0,
@@ -596,7 +596,7 @@ const mylineGraph3 = new Chart(ctx3, {
         },
         {
           label: "油中糠醛總濃度",
-          data: [42, 50, 35, 35],
+          data: [0, 0, 0, 0],
           fill: false,
           borderColor: "#94bc60",
           lineTension: 0,
@@ -624,7 +624,8 @@ const mylineGraph3 = new Chart(ctx3, {
             }],
             yAxes:[{
                 ticks: {
-                    fontSize: 20,
+                  min: 0,
+                  fontSize: 20,
                 },
             }]
         },

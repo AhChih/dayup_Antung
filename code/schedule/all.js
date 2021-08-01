@@ -2,8 +2,10 @@ let tabs_nav = document.getElementById('tabs-nav')
 
 const data = [
     {
-        title_1: '朔石化股份-桃園二廠PVC | 再生案2台',
-        title_2: '朔石化股份-桃園二廠PVC | 再生案2台'
+        title_1: '測試一測試一測試一測試一測試一測試一測試一測試一',
+        title_2: '測試二測試二測試二測試二測試二測試二測試二測試二',
+        title_3: '測試二測試二測試二測試二測試二測試二測試二測試二'
+
     },
 ]
 // 頁籤渲染
@@ -16,6 +18,9 @@ function tabRender(){
             </li>
             <li class="mask-2">
                 <a href="#tab2">${res.title_2}</a>
+            </li>
+            <li class="mask-2">
+                <a href="#tab2">${res.title_3}</a>
             </li>
         `
     })

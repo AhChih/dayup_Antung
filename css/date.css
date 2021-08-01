@@ -1,0 +1,20 @@
+.date {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.date span {
+    margin-right: 5px;
+    color: gray;
+}
+
+.date li {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px 0 0;
+}
+
+input {
+    width: 100px;
+}
