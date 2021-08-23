@@ -23,7 +23,7 @@ const newData = [
 function dataRender(){
     let titleStr = '';
     let dataStr = '';
-    titleStr += `<tr style="color: white";>
+    titleStr += `<tr class="text-white";>
     <td>區域篩選</td>
     <td>變壓器名稱</td>
     <td>變壓器序號</td>
@@ -258,7 +258,7 @@ function chartRednder2() {
   <tr>
     <td><span class="gray">500</span></td>
     <td><span class="gray">700</span></td>
-    <td><span class="gray" style="font-size: 15px">可燃性氣體總量(TDCG)</span></td>
+    <td><span class="gray">可燃性氣體總量(TDCG)</span></td>
     <td><span>610</span></td>
     <td><span>640</span></td>
     <td><span>670</span></td>

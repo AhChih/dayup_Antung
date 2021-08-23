@@ -19,12 +19,12 @@ body {
     background-color: white;
   }
 
-  .p-0 {
-    padding: 0 !important;
+  .text-white {
+    color: white;
   }
 
-  .m-2percentage {
-    margin: 2% !important;
+  .p-0 {
+    padding: 0 !important;
   }
 
   .border-none {
@@ -34,6 +34,15 @@ body {
   .ipad-none {
     display: none !important;
   }
+
+  .vertical-align-middle {
+    vertical-align: middle;
+  }
+
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+
 
 
   @media (max-width: 992px) {

@@ -98,14 +98,11 @@
 }
 
 .table-content .rowspan {
-    position: relative;
+    vertical-align: middle;
     border-right: 1px solid gray;
 }
 
 .table-content .rowspan span {
-    position: absolute;
-    top: 25%;
-    left: 25%;
     border-right: none;
 }
 
@@ -138,7 +135,7 @@
     width: 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .table-box {
         width: 320%;
     }
@@ -153,5 +150,32 @@
     }
     .chart-1 {
         width: 700px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-setting {
+        margin-top: 2%;
+    }
+    .table-box {
+        width: 580%;
+    }
+    .table-content {
+        overflow-x: auto;
+    }
+    .table-box td {
+        font-size: 14px;
+    }
+    .data-table td {
+        font-size: 14px;
+    }
+    .table-content {
+        margin-top: 2%;
+    }
+    #chart_1, #chart_2, #chart_3 {
+        width: 250%;
+    }
+    .chart-box {
+        display: block;
     }
 }
