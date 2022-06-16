@@ -74,7 +74,7 @@ function render() {
         <ul class="menu">
           <li>
             <a class="menu-list" href="../schedule/schedule.html">
-             <img src="../../image/2.Home/icon-1.svg">
+             <img src="../../image/2.Home/icon-2.svg">
              <span>廠區樣品進度管理</span>
             </a>
           </li>
