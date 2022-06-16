@@ -30,7 +30,7 @@ function render() {
                   </li>
                   <li>
                     <a class="menu__item" href="../schedule/schedule.html">
-                      <img src="../../image/2.Home/icon-1.svg">
+                      <img src="../../image/2.Home/icon-2.svg">
                       <span>廠區樣品進度管理</span>
                     </a>
                   </li>
